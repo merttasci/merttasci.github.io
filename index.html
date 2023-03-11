@@ -270,24 +270,6 @@
             <a href="https://github.com/merttasci" class="hover-link" target="_blank">- github/merttasci</a>
           </div>
         </div>
-
-
-        <div class="row">
-          <div class="col-md-12">
-            <h3>
-              <tt>now playing</tt>
-            </h3>
-          </div>
-        </div>
-        <div class="row" style="margin:0px; padding:0px">
-          <a href="#" id="spotify" target="_blank">
-            <div class="col-md-12 backbox">
-              <div id="coverimage" style="box-shadow: 0px 0px 49px -12px rgba(0,0,0,0.75); border-radius:8px; height:210px; background-size: cover; background-image: url('');"></div>
-              <marquee><p id="song" style="margin-top:20px; color:white; font-weight: 100; font-size: 14px">no song is playing currently</p>
-              <p id="artist" style="color:#7f8c8d; font-size:12px"></p></marquee>
-            </div>
-            </a>
-        </div>
       </div>
       <div class="col-md-8">
         <br class="hidden-md hidden-lg">
@@ -327,18 +309,18 @@ that's all for now...
                 </div>
                 <div class="col-md-9 col-xs-8" style="margin:0; padding:0">
                   <div class="row" style="text-align: left;">
-                    <div data-toggle="tooltip" title="rank on the platform" class="col-md-3 col-xs-3" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">rank</span><br><mt id="rank">-</mt></div>
-                    <div data-toggle="tooltip" title="total valid report count on the platform" class="col-md-5 col-xs-5" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">submissions<span class="hidden-xs" style="color:#7f8c8d; font-size:12px">/reports</span></span><br><mt id="bugs">-</mt></div>
-                    <div data-toggle="tooltip" title="total points earned on the platform" class="col-md-4 col-xs-4" style=""><span style="color:#7f8c8d; font-size:12px">points</span><br><mt id="points">-</mt></div>
+                    <div data-toggle="tooltip" title="rank on the platform" class="col-md-3 col-xs-3" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">rank</span><br><mt id="rank">2nd</mt></div>
+                    <div data-toggle="tooltip" title="total valid report count on the platform" class="col-md-5 col-xs-5" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">submissions<span class="hidden-xs" style="color:#7f8c8d; font-size:12px">/reports</span></span><br><mt id="bugs">2789</mt></div>
+                    <div data-toggle="tooltip" title="total points earned on the platform" class="col-md-4 col-xs-4" style=""><span style="color:#7f8c8d; font-size:12px">points</span><br><mt id="points">32406</mt></div>
                   </div>
                   <div class="row" style="text-align: left; margin-top:20px">
                     <div class="col-md-12 col-xs-12"><span style="color:#7f8c8d; font-size:12px">badges</span><br></div>
                   </div>
                   <div class="row" style="text-align: left;">
-                    <div class="col-md-2 col-xs-4" id="badgebee"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/bounty-bee/level-7-805a48cef0afff4386799b4a3d8c39d6.svg"></div>
-                    <div class="col-md-2 col-xs-4" id="shogun"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/submission-shogun/level-9-fbaa419b01efc2a57858fc02de443cbd.svg"></div>
-                    <div class="col-md-2 col-xs-4" id="p1"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/p1-warrior/level-7-49638dc35cb48d8838d91fff732b0c4c.svg"></div>
-		    <div class="col-md-2 col-xs-4" id="collab"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/collaboration-crusader/level-1-b3fc777325da3a3eed1b36d62a743385.svg"></div>
+                    <div class="col-md-2 col-xs-4" id="badgebee" data-toggle="tooltip" title="i sent at least one valid report to 550 different bug bounty programs"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/bounty-bee/level-7-805a48cef0afff4386799b4a3d8c39d6.svg"></div>
+                    <div class="col-md-2 col-xs-4" id="shogun" data-toggle="tooltip" title="i sent 2788 valid vulnerability report"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/submission-shogun/level-9-fbaa419b01efc2a57858fc02de443cbd.svg"></div>
+                    <div class="col-md-2 col-xs-4" id="p1" data-toggle="tooltip" title="i sent ~500 critical reports."><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/p1-warrior/level-7-49638dc35cb48d8838d91fff732b0c4c.svg"></div>
+		    <div class="col-md-2 col-xs-4"></div>
                   </div>
                   <div class="row" style="text-align: left; margin-top:20px;">
                     <div class="col-md-6 col-xs-12"><span style="color:#7f8c8d; font-size:12px">verifications</span><br><span data-toggle="tooltip" title="local identity card sent to bugcrowd and approved"><i class="fa fa fa-check-circle" aria-hidden="true" style="color:green; font-size:18px"></i> <span style="font-size:12px;">id verified</span></span>
@@ -421,32 +403,7 @@ that's all for now...
                    '322585528'];
       var item = items[Math.floor(Math.random()*items.length)];
       $("#soundcloud").attr("src", "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + item + "&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true");
-      $.getJSON( "api/bugcrowd.php", function( data ) {
-        $("#rank").text(data['rank']);
-        $("#bugs").text(data['bugs']);
-        $("#points").text(data['points']);
-        $("#badgebee").attr("data-toggle","tooltip");
-        $("#badgebee").attr("title", "i sent at least one valid report to "+data['badgebee']+" different bug bounty programs");
-        $("#shogun").attr("data-toggle","tooltip");
-        $("#shogun").attr("title", "i sent "+data['badgeshogun']+" valid vulnerability report");
-        $("#p1").attr("data-toggle","tooltip");
-        $("#p1").attr("title", "i sent "+data['badgep1']+" critical reports.");
-        $("#collab").attr("data-toggle","tooltip");
-        $("#collab").attr("title", "i collaborated with another researcher on "+data['badgecollab']+" reports.");
-        $('[data-toggle="tooltip"]').tooltip();
-        //$("#points").text(data['points']);
-        //$("#points").text(data['points']);
-	    });
-      </script><script>
-      $.getJSON( "api/spotify2.php", function( data ) {
-        $("#coverimage").css("background-image","url('"+data[0]['image']+"')");
-        $("#artist").html(data[0]['artist'].toLowerCase());
-        $("#song").html(data[0]['song'].toLowerCase());
-        $("#spotify").attr("href", data[0]['link']);
-      });
-      
-      $("#banner").css("background-image", "url('imgs/banners/banner"+String(Math.floor((Math.random() * 28) + 1))+".jpg')");
-    </script>
+      </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
