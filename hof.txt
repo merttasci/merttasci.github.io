@@ -1,0 +1,22 @@
+99designs - https://hackerone.com/99designs/thanks
+eventbrite - https://www.eventbrite.com/walloffame/
+generalmotor - https://hackerone.com/99designs/thanks
+fca - https://bugcrowd.com/fca/hall-of-fame
+line - https://linecorp.com/en/security/bugbounty/halloffame/
+mail ru - https://hackerone.com/mailru/thanks
+cisco - #
+mackeeper - https://bugcrowd.com/mackeeper/hall-of-fame
+hootsuite - https://hootsuite.com/security
+ribose - https://www.ribose.com/security/hall_of_fame
+twitter - https://hackerone.com/twitter/thanks
+master card - https://bugcrowd.com/mastercard/hall-of-fame
+pantheon - https://bugcrowd.com/pantheon/hall-of-fame
+yahoo - https://hackerone.com/yahoo/thanks/
+sprout social - https://bugcrowd.com/sproutsocial/hall-of-fame
+ycombinator - https://news.ycombinator.com/security.html
+constant contact - https://bugcrowd.com/constantcontact/hall-of-fame
+microweber - https://microweber.com/list-of-contributors
+xmarks - https://buy.xmarks.com/security.php
+put io - https://hackerone.com/99designs/thanks
+cert-eu - https://cert.europa.eu/cert/newsletter/en/latest_HallOfFame_.html
+picturepush - http://picturepush.com/disclosure

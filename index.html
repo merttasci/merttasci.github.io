@@ -1,1 +1,461 @@
-test page
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mert tasci</title>
+    <meta name="description" content="mert's home page">
+    <meta name="author" content="mert tasci">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spartan:800italic,700,300,600,800,400" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <meta name="yandex-verification" content="951e835037b7be34" />
+    <style type="text/css">
+      * {
+        line-height: 160%;
+        color: white;
+        font-size:14px;
+      }
+
+      .classical-font {
+        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-size:14px;
+      }
+
+      h3 tt{
+        font-family: 'Spartan', sans-serif;
+        font-weight: 800;
+        font-size:22px;
+        color: white;
+      } 
+
+      a, a i {
+        color: #f8c291;
+        text-decoration: none;
+      }
+
+      a:hover {
+        border-radius: 3px;
+        text-decoration: underline;
+        padding:3px;
+        color:#f8c291;
+      }
+
+      a:visited {
+        color: #f8c291;
+     }
+
+      #maincontainer {
+        margin: 25%;
+        margin-top:30px;
+        margin-bottom:30px;
+      }
+
+      body {
+        background-color: #121212;
+        background-image: url('imgs/testbg.jpg');
+        background-size: top;
+      }
+
+      .hr {
+        border-bottom: 3px solid #282828;
+        margin-top:20px;
+      }
+
+      .panel {
+        margin:0;
+      }
+
+      @media(max-width: 1024px){
+          #maincontainer {
+            margin: 0px;
+            margin-top:10px;
+          }
+          .no-margin-left-xs{
+            margin-left: 0px;
+            margin-top: 15px;
+          }
+          .no-margin-left-xs2{
+            margin-top: 15px;
+          }
+          .no-margin-left-xs3{
+            margin-top: 6px !important;
+          }
+          .margin-bottom-10-xs{
+            margin-bottom: 10px;
+          }
+          .img-max-width-xs{
+            max-width: 38px;
+          }
+          .width-img-9-xs{
+            width: 9% !important;
+          }
+          .width-img-9-xs2{
+            width: 7% !important;
+          }
+          #coverimage {
+            height:320px !important;
+          }
+          .sociallinks{
+            height:70px;
+            padding-right:0px !important;
+          }
+          .bugcrowdstaticsinline{
+            height: 270px !important;
+          }
+      }
+
+      @media(min-width: 20in){
+          #maincontainer {
+            width: 1200px;
+            margin-left: 390px;
+          }
+      }
+
+      #animes .col-md-6 {
+        font-size: 14px;
+      }
+
+      #halloffamelist .col-md-3 {
+        font-size:14px;
+      }
+
+      .navxelement {
+        font-size:13px;
+        padding: 4px;
+        background-color: #B2B6BD;
+        border-radius: 3px;
+        color:#2b303b;
+      }
+
+      .navxelement:hover {
+        padding: 4px;
+        text-decoration: underline;
+        color:#2b303b;
+      }
+
+      .sociallinks a:hover{
+        background-color: transparent;
+        padding:0px;
+
+      .sociallinks div a .fa {
+        font-size: 20px;
+      }
+
+      }
+
+      #banner {
+        background-size: %100;
+        background-size:cover;
+        border-radius: 4px;
+        margin-top:-1px;
+        height: 25px;
+      }
+
+      #banner:hover {
+        cursor: pointer;
+      }
+
+      .japan {
+        font-size: 14px;
+      }
+
+      #playing a{
+        color:white;
+        font-size:14px;
+      }
+      
+      #playing a:visited {
+        font-size:14px;
+        color:white;
+      }
+
+      .backbox{
+        font-size:14px; 
+        border-radius:8px; 
+        width: 100%; 
+        padding:30px; 
+        padding-bottom:10px;
+        background-color: #282828;
+      }
+
+      mt {
+        font-size: 20px;
+      }
+
+    </style>
+    <script>
+      if (location.protocol != 'https:')
+        {
+         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </head>
+  <body>
+  <hr style="margin:0; padding:0; border-color:#f8c291; height: 5px; background-color:#f8c291">
+  <div id="maincontainer" class="container-fluid classical-font">
+    <!--<div class="row hidden-xs" style="margin-bottom: 20px">
+      <div class="col-md-4" id="banner">
+        <marquee id="playing" style="font-family:'Amatic SC'; color:white; font-size:15px" scrolldelay="200">we're not alone in this universe.</marquee>
+      </div>
+    </div>-->
+    <div class="row" id="whoami">
+      <div class="col-md-4" style="border-left:1px solid #f8c291;  padding-bottom:10px; font-size:14px">
+        <div class="row">
+          <div class="col-md-12">
+    		    <img id="ppicture" src="imgs/pp4.jpeg" class="img-rounded" style="width:100%;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <tt>title</tt>
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-12 backbox" style="padding:6%; padding-left:12%;">
+        <div class="row" style="font-size:14px">
+          application security engineer
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <tt>social</tt>
+            </h3>
+          </div>
+        </div>
+        <div class="row" style="margin:0px; padding:0px">
+          <div class="col-md-12 sociallinks backbox" style="text-align:center; padding:6%; padding-left:0px; height: 70px; padding-right:1px; padding-bottom:12px">
+                <div class="col-md-4 col-xs-4" style="border-right:1px solid #111111;">
+                <a href="https://twitter.com/mertistaken" target="_blank"><i class="fa fa-twitter" style="font-size:25px" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 col-xs-4" style="border-right:1px solid #111111;">
+                <a href="https://tr.linkedin.com/in/merttasci" target="_blank"><i class="fa fa-linkedin" style="font-size:25px" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                <a href="https://soundcloud.com/merttasc" target="_blank"><i class="fa fa-soundcloud" style="font-size:25px" aria-hidden="true"></i></a>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <tt>sharing</tt>
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-12 backbox" style="padding:6%; padding-left:12%;">
+<div class="row" style="font-size:14px">
+            <a href="https://blog.mert.ninja/" class="hover-link" target="_blank">- blog.mert.ninja</a>
+          </div>
+          <div class="row" style="font-size:14px">
+            <a href="https://twitter.com/bugbountynights" class="hover-link" target="_blank">- twitter/bugbountynights</a>
+          </div>
+          <div class="row" style="font-size:14px">
+            <a href="https://github.com/merttasci" class="hover-link" target="_blank">- github/merttasci</a>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <tt>now playing</tt>
+            </h3>
+          </div>
+        </div>
+        <div class="row" style="margin:0px; padding:0px">
+          <a href="#" id="spotify" target="_blank">
+            <div class="col-md-12 backbox">
+              <div id="coverimage" style="box-shadow: 0px 0px 49px -12px rgba(0,0,0,0.75); border-radius:8px; height:210px; background-size: cover; background-image: url('');"></div>
+              <marquee><p id="song" style="margin-top:20px; color:white; font-weight: 100; font-size: 14px">no song is playing currently</p>
+              <p id="artist" style="color:#7f8c8d; font-size:12px"></p></marquee>
+            </div>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <br class="hidden-md hidden-lg">
+        <div class="row">
+          <div class="col-md-12" style="border-left:1px solid #f8c291;  padding-bottom:10px">
+            <h3 style="margin-top:0">
+              <tt>about</tt>
+            </h3>
+            <div class="row" style="font-size:14px; padding:0px; margin:0px">
+              <div class="col-md-12 backbox">
+                <p>
+hello my name is mert tasci! 
+<br><br>
+i was actually a software development enthusiast at university and i had an entry/intermediate level study on many programming languages like python, .net, php, c / c++, android, front-end langs, etc. i loved web application development but i like the security side more and i have been here since 2015 as a security professional.
+<br><br>
+i'm currently doing full-time bug bounty on bugcrowd. i have discovered more than ~2500 valid vulnerabilities. i am also hunting on synack as a security researcher.
+<br><br>
+hacking motivates me a lot!
+that's all for now...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br class="hidden-xs"><br class="">
+        <div class="row" id="bugcrowdstatics">
+          <div class="col-md-12" style="border-left:1px solid #f8c291;  padding-bottom:10px">
+            <h3 style="margin-top:0">
+              <tt>bugcrowd statics</tt>
+            </h3>
+            <div class="row" style="font-size:14px; padding:0px; margin:0px">
+              <div class="col-md-12 backbox bugcrowdstaticsinline" style="height: 320px;">
+                <div class="col-md-3 col-xs-4" style="padding-left:0px;">
+                  <div class="row">
+                    <div style="border-right:1px solid #111111; margin-right:15px; height:245px"><img src="https://profiles.bugcrowdusercontent.com/avatars/7b72de504960bfce0e38c14bdfeda3f1/mj-avatar-png.png" style="width: 90%; border-radius: 100px"></div>
+                  </div>
+                </div>
+                <div class="col-md-9 col-xs-8" style="margin:0; padding:0">
+                  <div class="row" style="text-align: left;">
+                    <div data-toggle="tooltip" title="rank on the platform" class="col-md-3 col-xs-3" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">rank</span><br><mt id="rank">-</mt></div>
+                    <div data-toggle="tooltip" title="total valid report count on the platform" class="col-md-5 col-xs-5" style="border-right:1px solid #111111;"><span style="color:#7f8c8d; font-size:12px">submissions<span class="hidden-xs" style="color:#7f8c8d; font-size:12px">/reports</span></span><br><mt id="bugs">-</mt></div>
+                    <div data-toggle="tooltip" title="total points earned on the platform" class="col-md-4 col-xs-4" style=""><span style="color:#7f8c8d; font-size:12px">points</span><br><mt id="points">-</mt></div>
+                  </div>
+                  <div class="row" style="text-align: left; margin-top:20px">
+                    <div class="col-md-12 col-xs-12"><span style="color:#7f8c8d; font-size:12px">badges</span><br></div>
+                  </div>
+                  <div class="row" style="text-align: left;">
+                    <div class="col-md-2 col-xs-4" id="badgebee"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/bounty-bee/level-7-805a48cef0afff4386799b4a3d8c39d6.svg"></div>
+                    <div class="col-md-2 col-xs-4" id="shogun"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/submission-shogun/level-9-fbaa419b01efc2a57858fc02de443cbd.svg"></div>
+                    <div class="col-md-2 col-xs-4" id="p1"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/p1-warrior/level-7-49638dc35cb48d8838d91fff732b0c4c.svg"></div>
+		    <div class="col-md-2 col-xs-4" id="collab"><img style="width:60px" src="https://bugcrowd.com/packs/media/images/achievements/collaboration-crusader/level-1-b3fc777325da3a3eed1b36d62a743385.svg"></div>
+                  </div>
+                  <div class="row" style="text-align: left; margin-top:20px;">
+                    <div class="col-md-6 col-xs-12"><span style="color:#7f8c8d; font-size:12px">verifications</span><br><span data-toggle="tooltip" title="local identity card sent to bugcrowd and approved"><i class="fa fa fa-check-circle" aria-hidden="true" style="color:green; font-size:18px"></i> <span style="font-size:12px;">id verified</span></span>
+                      <br><span data-toggle="tooltip" title="background checked by bugcrowd since 2016-11-28"><i class="fa fa fa-check-circle" aria-hidden="true" style="color:green; font-size:18px"></i> <span style="font-size:12px">background-checked</span></span></div>
+                    <div class="col-md-6 hidden-xs" style="padding:0; margin:0; text-align: right; margin-top:11%"><a href="https://bugcrowd.com/mert" style="font-size:12px;" target="_blank">visit my full profile&nbsp;&nbsp;<i class="fa fa fa-angle-right" aria-hidden="true"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br class="hidden-xs"><br class="">
+        <div class="row">
+          <div class="col-md-12" style="border-left:1px solid #f8c291;  padding-bottom:10px">
+            <h3 style="margin-top:0">
+              <tt>mentions</tt>
+            </h3>
+              <div class="row backbox" style="font-size:14px; margin:0;">
+                <div class="col-md-12" style="margin:0; padding:0">
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-to-our-mvp-researchers-in-q4-2019/" target="_blank">2019-q4 mvp researcher</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-to-our-top-p1-researchers-in-q4-2019-2/" target="_blank">2019-q4 top p1 researcher</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-q4-2019-bounty-slayers-winners/" target="_blank">2019-q4 bounty slayer</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-to-our-top-p1-researchers-in-q3-2019/" target="_blank">2019-q3 top p1 researcher</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-q3-2019-bounty-slayers-winners/" target="_blank">2019-q3 bounty slayer</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/congratulations-to-our-most-dedicated-researchers-in-q1-2019/" target="_blank">2019-q1 bounty slayer</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/bugcrowd-announces-fourth-annual-buggy-awards-finalists/" target="_blank">fourth annual buggy awards finalist</a></p>
+                  <p><i class="fa fa-align-left" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://leanpub.com/web-hacking-101" target="_blank">web hacking 101 book includes my twitter vulnerability</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/october-2018-hall-of-fame/" target="_blank">2018-october 3rd on the bugcrowd's monthly leaderboard</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/july-2018-hall-of-fame/" target="_blank">2018-july 1st on the bugcrowd's monthly leaderboard</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/the-2018-mvp-researchers/" target="_blank">2018 mvp researcher</a></p>                  
+                  <p><i class="fa fa-align-left" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/" target="_blank">how-to: find idor (insecure direct object reference) vulnerabilities for large bounty rewards</a></p>
+                  <p><i class="fa fa-align-left" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.redbull.com/tr-tr/siber-guvenlik-nedir-nasil-saglanir" target="_blank">[turkish] interview about cyber-security on redbull</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/bugcrowd-celebrates-top-researchers-with-2016-bug-bounty-bonus-awards/" target="_blank">2016 mvp researcher</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/bugcrowds-2nd-annual-buggy-awards-closing/" target="_blank">"honored bug hunter" in top kudos points category of 2nd annual buggy awards</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/november-2016-hall-of-fame/" target="_blank">2016-november 2st on the bugcrowd's monthly leaderboard</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/july-2016-hall-of-fame/" target="_blank">2016-july 1st on the bugcrowd's monthly leaderboard</a></p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/june-2016-leaderboard/" target="_blank">2016-june 2nd on the bugcrowd's monthly leaderboard</a> </p>
+                  <p><i class="fa fa-trophy" style="font-size: 16px" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.bugcrowd.com/blog/may-2016-leaderboard/" target="_blank">2016-may 1st on the bugcrowd's leaderboard</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+	<div class="row">
+          <div class="col-md-12" style="border-left:1px solid #f8c291;  padding-bottom:10px">
+            <h3 style="margin-top:0">
+              <tt>music of the day</tt>
+            </h3>
+              <div class="row backbox" style="font-size:14px; margin:0;">
+                <div class="col-md-12" style="margin:0; padding:0">
+                  <iframe id="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src=""></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br class="hidden-xs"><br class="">
+    	</div>
+    </div>
+    <div class="row" style="margin-bottom:15px;">
+      <div class="col-md-12">
+        <div class="hr"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="font-size:12px; text-align:center;">
+        <a style="font-size:12px;" href="animelist.txt" target="_blank">animelist.txt</a> | <a style="font-size:12px;" href="https://resume.mert.ninja" target="_blank">resume (soon)</a> | <span style="font-size:12px;">designed by me. ^_^ </span>
+      </div> 
+    </div>
+  </div>
+
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+
+      var items = ['808712422',
+                   '528876819',
+                   '327595485',
+                   '322793010',
+                   '322618823',
+                   '322609578',
+                   '322585528'];
+      var item = items[Math.floor(Math.random()*items.length)];
+      $("#soundcloud").attr("src", "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + item + "&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true");
+      $.getJSON( "api/bugcrowd.php", function( data ) {
+        $("#rank").text(data['rank']);
+        $("#bugs").text(data['bugs']);
+        $("#points").text(data['points']);
+        $("#badgebee").attr("data-toggle","tooltip");
+        $("#badgebee").attr("title", "i sent at least one valid report to "+data['badgebee']+" different bug bounty programs");
+        $("#shogun").attr("data-toggle","tooltip");
+        $("#shogun").attr("title", "i sent "+data['badgeshogun']+" valid vulnerability report");
+        $("#p1").attr("data-toggle","tooltip");
+        $("#p1").attr("title", "i sent "+data['badgep1']+" critical reports.");
+        $("#collab").attr("data-toggle","tooltip");
+        $("#collab").attr("title", "i collaborated with another researcher on "+data['badgecollab']+" reports.");
+        $('[data-toggle="tooltip"]').tooltip();
+        //$("#points").text(data['points']);
+        //$("#points").text(data['points']);
+	    });
+      </script><script>
+      $.getJSON( "api/spotify2.php", function( data ) {
+        $("#coverimage").css("background-image","url('"+data[0]['image']+"')");
+        $("#artist").html(data[0]['artist'].toLowerCase());
+        $("#song").html(data[0]['song'].toLowerCase());
+        $("#spotify").attr("href", data[0]['link']);
+      });
+      
+      $("#banner").css("background-image", "url('imgs/banners/banner"+String(Math.floor((Math.random() * 28) + 1))+".jpg')");
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87151305-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
